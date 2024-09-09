@@ -4,26 +4,26 @@ Jupyter notebook for Stable Diffusion Web UI and Stable Diffusion Web UI Forge.
 ![Notebook_preview](https://github.com/ffxvs/sd-webui-complete-setup/assets/156585597/52855d70-7c6b-42af-aa15-9ea67c99a5e5)
 
 ## Features  
-* SD Web UI and SD Web UI Forge
-* Support for Paperspace and Runpod
-* Using small Docker containers under 5GB
-* Notebook for installing Web UI, downloading SD v1.5 and SDXL models.
-* Checking the latest version of the notebook.
-* Storing resources such as models, loRA, embeddings, outputs in shared storage.
-* List of some popular extensions.
-* List of several popular models in 4 categories, namely Anime/Cartoon/3D, General Purpose, Realistic, Woman.
-* List of some useful resources for loRA, embedding, upscaler, and VAE.
-* Install extensions, loRA, embedding, upscaler, VAE from URLs.
+* SD Web UIとSD Web UI Forge版を使用可能
+* paperspaceとRunpodをサポート
+* 5GB以下の小さなコンテナを使用
+* Web UIをインストールし、SD v1.5とSDXLモデル両方をダウンロードできます
+* 最新のノートブックへの更新
+* モデルやLora、embadding、生成画像などは共有ストレージに保存されます
+* 有用な拡張機能をリスト化
+* いくつかの有用なアニメや一般用、リアル系のモデルをリスト化
+* いくつかの有用なLoraやembedding、アップスケーラーやVAEなどはリスト化されています
+* URLから拡張機能やLora、embedding、アップスケーラー、VAEなどを追加することも可能
 
-## How to use  
+## 使い方 
 ### Paperspace  
-1. [Sign up](https://console.paperspace.com/signup) and subscribe to one of the [subscription plans](https://www.paperspace.com/gradient/pricing) (Pro or Growth)
-2. Create a project then create a notebook in it.
-3. Select the **"Start from Scratch"** template
-4. Choose one of the free GPUs with at least 16GB VRAM (except Free-P5000).
-5. Set the Auto-shutdown timeout to 6 hours.
-6. Click **View Advanced Options.**
-7. Fill in the Container's name and command field as follows and leave other field blank. Just click copy button on the right.
+1. Paperspaceに[登録](https://console.paperspace.com/signup) し、ProかGrowthのうちどれか一つのプランを [購読](https://www.paperspace.com/gradient/pricing) します
+2. Create a projectからプロジェクトを作成し、create a notebookへ進みます
+3. Launch a notebookへ進んだら、下の **"Start from Scratch"** へ進みます
+4. ビデオメモリが16GB以上あるGPUを、サブスクプランと同一でFreeとついている中から選択します(Free-P5000以外)
+5. Auto-shutdown timeoutを **6 hours** に変更
+6. 下にある **View Advanced Options.** をクリック
+7. Container直下のname欄に、以下のコマンドをコピー&ペーストなどで入力し、他の欄は空欄のままにします
    * Container's name
      * SD Web UI
        ```
@@ -37,13 +37,13 @@ Jupyter notebook for Stable Diffusion Web UI and Stable Diffusion Web UI Forge.
      ```
      bash /paperspace-start.sh
      ```
-8. Start notebook and wait until the machine is running.
-9. Duplicate your tab to keep the console open. Then click the **"Open in Jupyterlab"** button (the orange circle icon) in the left sidebar.
-10. There will be 3 ipynb notebook files.
-   * `sd_webui_paperspace.ipynb` or `sd_webui_forge_paperspace.ipynb` for installing Web UI.
-   * `sd15_resource_lists.ipynb` for downloading SD v1.5 models.
-   * `sdxl_resource_lists.ipynb` for downloading SDXL models.
-11. Read [Paperspace Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Paperspace-Guide) and [Resource Lists Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Resource-Lists-Guide) to use the notebooks.
+9.  Start notebookを押してrunningという表示が出るまで待ちます、これには1分から5分程度の時間がかかる場合があります
+10. コンソール画面や各種データを見る場合はタブを複製しておきます、 左のバーにある **"Open in Jupyterlab"** ボタン (オレンジの丸いアイコン)を押します
+11. 3つのipynb拡張子のついたノートブックファイルがあります
+   * `sd_webui_paperspace.ipynb` または `sd_webui_forge_paperspace.ipynb` はWebuiをインストールしたり起動するためのものです
+   * `sd15_resource_lists.ipynb` ではSD 1.5のモデルや各種リソースをダウンロードできます
+   * `sdxl_resource_lists.ipynb` ではSDXLのモデルや各種リソースをダウンロードできます
+11.  [Paperspace Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Paperspace-Guide) や [Resource Lists Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Resource-Lists-Guide) に使い方の詳細が書いてあります
 
 <br>
 
