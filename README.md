@@ -1,5 +1,5 @@
 # Stable Diffusion Webui Complete Setup  
-Jupyter notebook for Stable Diffusion Web UI and Stable Diffusion Web UI Forge.
+Stable DiffusionのWeb ui及びFolk版用のジュピターノートブック
 
 ![Notebook_preview](https://github.com/ffxvs/sd-webui-complete-setup/assets/156585597/52855d70-7c6b-42af-aa15-9ea67c99a5e5)
 
@@ -67,8 +67,8 @@ Jupyter notebook for Stable Diffusion Web UI and Stable Diffusion Web UI Forge.
 
 <br>
 
-### Download Notebooks manually
-In case you can't download the latest notebooks from **Check for Updates** cell, you can download them manually from the links below :
+### ノートブックを手動でダウンロード
+ **Check for Updates** から最新のノートブックをダウンロードできない場合、以下のリンクから手動でダウンロードできます
 - SD Web UI for Paperspace : [sd_webui_paperspace.ipynb](https://ffxvs.github.io/sd-webui-complete-setup/sd-webui/sd_webui_paperspace.ipynb)
 - SD Web UI for RunPod : [sd_webui_runpod.ipynb](https://ffxvs.github.io/sd-webui-complete-setup/sd-webui/sd_webui_runpod.ipynb) 
 - SD Web UI Forge for Paperspace : [sd_webui_forge_paperspace.ipynb](https://ffxvs.github.io/sd-webui-complete-setup/sd-webui-forge/sd_webui_forge_paperspace.ipynb)
