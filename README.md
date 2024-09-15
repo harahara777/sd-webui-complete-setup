@@ -39,7 +39,7 @@ Stable DiffusionのWeb ui及びFolk版用のジュピターノートブック
      ```
 9.  Start notebookを押してrunningという表示が出るまで待ちます、これには1分から5分程度の時間がかかる場合があります
 10. コンソール画面や各種データを見る場合はタブを複製しておきます、 左のバーにある **"Open in Jupyterlab"** ボタン (オレンジの丸いアイコン)を押します
-11. 3つのipynb拡張子のついたノートブックファイルがあります
+11.  以下の3つのノートブックファイルがあるはずです
    * `sd_webui_paperspace.ipynb` または `sd_webui_forge_paperspace.ipynb` はWebuiをインストールしたり起動するためのものです
    * `sd15_resource_lists.ipynb` ではSD 1.5のモデルや各種リソースをダウンロードできます
    * `sdxl_resource_lists.ipynb` ではSDXLのモデルや各種リソースをダウンロードできます
@@ -48,22 +48,22 @@ Stable DiffusionのWeb ui及びFolk版用のジュピターノートブック
 <br>
 
 ### Runpod  
-1. [Sign up](https://runpod.io?ref=synjcfeg) and add some credit to your [balance](https://www.runpod.io/console/user/billing).
-2. Open one of these template to create a Pod : [SD Web UI](https://runpod.io/console/gpu-cloud?template=38adx50leu&ref=synjcfeg) / [SD Web UI Forge](https://runpod.io/console/gpu-cloud?template=kwef1wl832&ref=synjcfeg)
-3. Make sure the template is : 
+1. Paperspaceに[登録](https://runpod.io?ref=synjcfeg) し、クレジットを [残高](https://www.runpod.io/console/user/billing) に追加します
+2. テンプレートの中からいずれかを開いてポッドを作成します : [SD Web UI](https://runpod.io/console/gpu-cloud?template=38adx50leu&ref=synjcfeg) / [SD Web UI Forge](https://runpod.io/console/gpu-cloud?template=kwef1wl832&ref=synjcfeg)
+3. テンプレートが以下のようになっていることを確認してください : 
    * SD Web UI : `ffxvs/sd-webui-containers:auto1111-latest`
    * SD Web UI Forge : `ffxvs/sd-webui-containers:forge-latest`
-4. Select _Secure Cloud_ if you want to use _Network Volume (Persistent Storage)_, or Community Cloud if you want to use cheaper GPU.
-5. Choose a GPU with at least 16GB VRAM, for example RTX A4000, RTX A4500, RTX 3090.
-6. Continue and Deploy, then go to My Pods. Wait until the Pod is ready.
-7. On the Pod you just created, click **Connect** then **Connect to HTTP Service [Port 8888]** to open Jupyterlab.
-8. There will be 3 ipynb notebook files.
-   * `sd_webui_runpod.ipynb` or `sd_webui_forge_runpod.ipynb` for installing Web UI.
-   * `sd15_resource_lists.ipynb` for downloading SD v1.5 models.
-   * `sdxl_resource_lists.ipynb` for downloading SDXL models.
-9. Read [Runpod Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Runpod-Guide) and [Resource Lists Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Resource-Lists-Guide) to use the notebooks.
-10. You can click **Connect to HTTP Service [Port 3001]** after installing and launching the Web UI.
-11. Stop the Pod if you don't use it anymore. Terminate the pod to delete the Pod and its content. Don't forget to download images you generated.
+4. _Network Volume (永続ストレージ)_ を使いたい場合は _Secure Cloud_ を選択します, より安価なGPUを使う場合は Community Cloud を選択します
+5. 少なくとも 16GB VRAM 以上のGPUを選択肢します、例:RTX A4000, RTX A4500, RTX 3090
+7. Continue を押し Deploy へと進みます, その後 My Pods へ行き、準備が完了するまで待ちます
+8. 作成されたポッドの **Connect** をクリックし、**Connect to HTTP Service [Port 8888]** でジュピターラボを起動します
+9. 以下の3つのノートブックファイルがあるはずです
+   * `sd_webui_runpod.ipynb` または `sd_webui_forge_runpod.ipynb` はWebuiをインストールしたり起動するためのものです
+   * `sd15_resource_lists.ipynb` ではSD 1.5のモデルや各種リソースをダウンロードできます
+   * `sdxl_resource_lists.ipynb` ではSDXLのモデルや各種リソースをダウンロードできます
+10. [Runpod Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Runpod-Guide) や [Resource Lists Guide](https://github.com/ffxvs/sd-webui-complete-setup/wiki/Resource-Lists-Guide) に使い方の詳細が書いてあります
+11. Web UI をインストールして起動した後、**Connect to HTTP Service [Port 3001]** をクリックできます。
+13. ポッドを使用をやめる場合は停止してください、ポッドを終了するとポッドとそのコンテンツは削除されます、事前に生成した画像等をダウンロードすることを忘れないでください
 
 <br>
 
